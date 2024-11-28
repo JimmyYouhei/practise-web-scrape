@@ -1,1 +1,32 @@
+# Web Scraping Movies
 
+This repository contains a Python script `webscraping_movies.py` that extracts information about the top 50 movies with the best average rating from a specified web link.
+
+## Purpose
+
+The purpose of the `webscraping_movies.py` script is to scrape the top 50 movies' Average Rank, Film, and Year from the provided link and save the extracted information to a CSV file and a database.
+
+## Functionality
+
+The script performs the following tasks:
+1. Scrapes the top 50 movies' Average Rank, Film, and Year from the provided link.
+2. Saves the extracted information to a CSV file named `top_50_films.csv`.
+3. Saves the same information to a database file named `Movies.db` under the table name `Top_50`.
+
+## How to Run the Script
+
+1. Ensure you have Python installed on your system.
+2. Install the required libraries by running:
+   ```
+   pip install requests beautifulsoup4
+   ```
+3. Run the script:
+   ```
+   python webscraping_movies.py
+   ```
+
+## Expected Output
+
+After running the script, you should see the following output files in the repository:
+1. `top_50_films.csv` - A CSV file containing the scraped information.
+2. `Movies.db` - A database file containing the scraped information under the table name `Top_50`.
